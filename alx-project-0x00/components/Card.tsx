@@ -2,17 +2,9 @@ import Image from "next/image"
 import HOUSE_IMAGE from "@/public/assets/house.png"
 import STAR_IMAGE from "@/public/assets/star.png"
 import React from "react"
- 
-interface PillProps {
-  title: string;
-}
-const Pill: React.FC<PillProps> = ({ title }) => {
-  return (
-    <div className="flex justify-center items-center bg-[#F9F9F9] px-3 w-auto h-[27px] rounded-full">
-      <p className="text-sm">{title}</p>
-    </div>
-  )
-}
+import Pill from "./Pill"
+
+
 const Card: React.FC = () => {
 
  return (
